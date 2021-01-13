@@ -8,12 +8,12 @@ from flask import request
 
 
 from config import keys
-from handlers import MarusiaHandler
+from handlers import MarusiaSimpleHandler
 
 app = Flask(__name__)
 
 
-@app.route("/sequence", methods=["POST"])
+@app.route("/", methods=["POST"])
 def main():
     logging.info("Request: %r", request.json)
     handler = MarusiaSimpleHandler(request, agent_type="dialogflow2")

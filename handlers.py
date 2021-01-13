@@ -11,7 +11,7 @@ class BaseHandler:
 
 class MarusiaSimpleHandler(BaseHandler):
     def __init__(self, request, agent_type):
-        super(MarusiaHandler, self).__init__()
+        super(MarusiaSimpleHandler, self).__init__()
         self.version = request.json["version"]
         self.session = request.json["session"]
         self.command = request.json["request"]["command"]

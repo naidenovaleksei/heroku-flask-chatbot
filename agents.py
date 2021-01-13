@@ -2,7 +2,7 @@ import dialogflow_v2
 from config import keys
 
 
-class BaseAgent(BaseAgent):
+class BaseAgent:
     def __init__(self, command):
         self.command = command
 
