@@ -7,7 +7,7 @@ from flask import Flask
 from flask import request
 
 
-from config import keys
+import keys
 from handlers import MarusiaSimpleHandler
 
 app = Flask(__name__)

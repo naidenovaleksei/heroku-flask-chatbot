@@ -1,5 +1,5 @@
 import dialogflow_v2
-from config import keys
+import keys
 
 
 class BaseAgent:
