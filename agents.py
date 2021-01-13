@@ -23,7 +23,7 @@ class DialogFlowAgent(BaseAgent):
 
     def get_agent_response(self):
         text_input = dialogflow_v2.types.TextInput(
-            self.command, language_code=self.language_code
+            text=self.command, language_code=self.language_code
         )
         query_input = dialogflow_v2.types.QueryInput(text=text_input)
         response = self.session_client.detect_intent(self.session_path, query_input)
